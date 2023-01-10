@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { pageRoutes } from "./routes/pageRoute";
+import { RouteProps } from "./types";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        {/* Header */}
+        <Box px="40px" pt="25px" h='full'>
+          <Routes>
+            {pageRoutes.map((route: RouteProps) => (
+              <Route key={route.path} path={route.path} element={route.component} />
+            ))}
+          </Routes>
+        </Box>
+        {/* Footer */}
+      </BrowserRouter>
+    </>
   );
 }
 
