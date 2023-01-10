@@ -26,6 +26,7 @@ const ModalDialog: FC<ComponentProps> = ({ onSubmit, ...props }) => {
 
     useEffect(() => {
         if (!!props.isLoading) onClose()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
