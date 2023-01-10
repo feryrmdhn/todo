@@ -6,7 +6,7 @@ This project uses several stacks like :
   <li>Typescript</li>
    <li>React</li>
   <li>Chakra UI</li>
-   <li>Axiosli>
+   <li>Axios</li>
   <li>Formik</li>
 </ul>
 
