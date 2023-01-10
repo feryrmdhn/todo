@@ -1,13 +1,19 @@
-LMS Simple Crud
+# Todo List
+
 This project uses several stacks like :
 
-Typescript
-React
-Chakra UI
-Axios
-Formik
-How to run :
-git clone https://github.com/feryrmdhn/todo.git
-cd lms-simple-crud
-npm install
-npm start
+<ul>
+  <li>Typescript</li>
+   <li>React</li>
+  <li>Chakra UI</li>
+   <li>Axiosli>
+  <li>Formik</li>
+</ul>
+
+## How to run :
+
+### `git clone https://github.com/feryrmdhn/todo.git`
+### `cd todo`
+### `npm install`
+### `npm start`
+
